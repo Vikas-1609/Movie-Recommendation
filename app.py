@@ -2,8 +2,8 @@ from flask import Flask, render_template, request
 import pickle
 import numpy as np
 # Load the pickled files
-movies = pickle.load(open("E:\\web projects\Movie Recommender Site\\movie_list.pkl", 'rb'))
-similarity = pickle.load(open("E:\\web projects\Movie Recommender Site\\similarity.pkl", 'rb'))
+movies = pickle.load(open("movie_list.pkl", 'rb'))
+similarity = pickle.load(open("similarity.pkl", 'rb'))
 
 # Create the Flask app
 app = Flask(__name__)
