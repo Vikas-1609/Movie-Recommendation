@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Recommendation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="static/images/ig.jpg" alt="LOGO"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="background firstsection">
+        <div class="container">
+            <h2 id="home"></h2>
+            <h1>Movie Recommendation</h1>
+            <form method="POST" action="/recommend">
+                <label for="movieName">Enter a movie name:</label>
+                <input type="text" name="movieName" id="movieName" placeholder="Enter Movie Name">
+                <input type="submit" value="Recommend">
+            </form><br>
+            <h1 reclass="text-center">{{ movie_name }}</h1>
+                <ul class="list-group">
+                    {% for movie in recommended_movies %}
+                        <h2>{{ movie }}</h2>
+                    {% endfor %}
+                </ul>
+        </div>
+    </section>
+
+    <section class="about section">
+        <div class="aboutbox">
+            <h2 id="about">About</h2>
+            <p>
+                "Our movie recommendation system uses advanced algorithms to suggest personalized movies based on your
+                preferences, making your movie-watching experience better than ever before."
+            </p>
+        </div>
+    </section>
+
+    <section class="services section">
+        <div class="servicebox">
+            <h2 id="services">Services</h2>
+            <p>
+                Our movie recommendation system uses advanced algorithms to help you discover new movies that you'll
+                love. We analyze your movie preferences and viewing history to suggest personalized recommendations
+                tailored just for you. With our system, you can easily find new movies to watch based on your interests,
+                whether it's a particular genre, actor, director, or theme.
+                In addition, our system provides you with up-to-date information about movies such as ratings, reviews,
+                and trailers to help you make informed decisions about what to watch next. Our intuitive user interface
+                makes it easy to search for movies and save them to your watchlist for later.
+                Our recommendation system is constantly learning and adapting to your preferences, so the more you use
+                it, the better it gets. With our system, you'll never run out of great movies to watch, and you'll
+                always be up-to-date with the latest releases and hidden gems.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact section">
+        <div class="box">
+            <h2 id="contact us">Contact Us</h2>
+            <input type="text" name="contact" id="contact" placeholder="enter you mail">
+            <input type="text" name="name" id="name" placeholder="enter you name">
+            <input type="text" name="query" id="query" placeholder="enter you Query"><br>
+            <input type="submit" value="Submit">
+        </div>
+    </section>
+</body>
+
+</html>

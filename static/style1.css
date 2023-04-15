@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.box {
+	margin: 0 auto;
+	width: auto;
+	padding: 20px;
+	text-align: center;
+    background-color: black;
+}
+.servicebox {
+	margin: 0 auto;
+	width: auto;
+	padding: 20px;
+	text-align: center;
+    background-color: rgb(43, 92, 102);
+}
+
+.aboutbox {
+	margin: 0 auto;
+	width: auto;
+	padding: 20px;
+	text-align: left;
+    background-color: rgb(35, 169, 64);
+    
+}
+
+.ab{
+    width: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center
+}
+
+.ab img {
+    width: 20%;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 30px;
+    color: white;
+}
+
+h2 {
+	font-size: 25px;
+	margin-bottom: 30px;
+    color: bisque;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 15px;
+	margin-bottom: 30px;
+    color: bisque;
+    text-align: left;
+}
+
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	font-size: 24px;
+	margin-bottom: 10px;
+    color: bisque;
+}
+
+input[type="text"] {
+	padding: 10px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: black;
+}
+
+input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	background-color: #0062cc;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../static/images/movie poster.jpg');
+    background-size: auto;
+    background-blend-mode: darken;
+}
+
+
+.navbar{
+    display: flex;
+    /* position: sticky;
+    top: 0;
+    cursor: pointer;
+     */
+    background-color: black;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 55%;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.nav-list{
+    width: 25%;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 18px 8px;
+    
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-list li a:hover{
+    color:  goldenrod;
+}
+
+.firstsection{
+    height: 100vh;
+}
+.text-center{
+    color: bisque;
+}
+.list-group h2{
+    color: azure;
+    text-size-adjust: 20px;
+}
